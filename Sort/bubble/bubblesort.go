@@ -1,14 +1,6 @@
-package main
+package bubble
 
-import "fmt"
-
-func main() {
-	var nums = []int{1, 5, 7, 89, 3, 7, 45}
-	BubbleSort(&nums)
-	fmt.Println(nums)
-}
-
-func BubbleSort(slc *[]int) {
+func Sort(slc *[]int) {
 	var nums = *slc
 	var length = len(nums)
 
