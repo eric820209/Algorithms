@@ -4,6 +4,12 @@ import "fmt"
 
 func main() {
 	var nums = []int{1, 5, 7, 89, 3, 7, 45}
+	BubbleSort(&nums)
+	fmt.Println(nums)
+}
+
+func BubbleSort(slc *[]int) {
+	var nums = *slc
 	var length = len(nums)
 
 	for t := 0; t < length; t++ {
@@ -15,5 +21,4 @@ func main() {
 			}
 		}
 	}
-	fmt.Println(nums)
 }
