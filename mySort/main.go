@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"mySort/selection"
+	"mySort/insertion"
 )
 
 func main() {
 	var nums = []int{1, 5, 7, 89, 3, 7, 45}
-	selection.Sort(&nums)
+	insertion.Sort(&nums)
 	fmt.Println(nums)
 }
