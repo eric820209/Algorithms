@@ -9,6 +9,8 @@ func Sort(slc *[]int) {
 				var temp = nums[j-1]
 				nums[j-1] = nums[j]
 				nums[j] = temp
+			} else {
+				break
 			}
 		}
 	}
